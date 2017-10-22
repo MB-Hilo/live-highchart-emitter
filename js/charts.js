@@ -24,7 +24,7 @@ $(document).ready(function () {
                     for (i = -19; i <= 0; i += 1) {
                         data.push({
                             x: time + i * 1000,
-                            y: Math.random()
+                            y: Math.round(Math.random() * 100)
                         });
                     }
 
@@ -59,11 +59,11 @@ $(document).ready(function () {
             xAxis: {
                 type: 'datetime',
                 tickPixelInterval: 150,
-                className: 'highcharts-color-0'
+                className: 'highcharts-color-1'
             },
             yAxis: {
                 title: {
-                    text: 'Rides'
+                    text: 'Ride requests'
                 },
                 plotLines: [{
                     value: 0,

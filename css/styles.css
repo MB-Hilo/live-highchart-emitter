@@ -2,7 +2,7 @@
 @import 'https://code.highcharts.com/css/highcharts.css';
 
 body {
-	background-color: #e4e4e4;
+	background-color: #e5f3ff;
 }
 
 .grab-color {
@@ -17,7 +17,7 @@ body {
 .chart {
 	min-width: 310px; 
 	height: 400px; 
-	margin: 0 auto;
+	margin: 0 0 30px 0;
 }
 
 /* Link the series colors to axis colors */
@@ -26,20 +26,20 @@ body {
 	stroke: #00b13f;
 }
 .highcharts-axis.highcharts-color-0 .highcharts-axis-line {
-	stroke: #7cb5ec;
+	stroke: #00b13f;
 }
 .highcharts-axis.highcharts-color-0 text {
-	fill: #7cb5ec;
+	fill: #00b13f;
 }
 .highcharts-color-1 {
 	fill: #00b13f;
 	stroke: #00b13f;
 }
 .highcharts-axis.highcharts-color-1 .highcharts-axis-line {
-	stroke: #90ed7d;
+	stroke: #00b13f;
 }
 .highcharts-axis.highcharts-color-1 text {
-	fill: #90ed7d;
+	fill: #00b13f;
 }
 
 

@@ -8,10 +8,10 @@ var dataSources = [
     {id:"singapore", container:"container", name:"Singapore"},
     {id:"vietnam", container:"container2", name:"Vietnam"},
     {id:"indonesia", container:"container3", name:"Indonesia"},
-    {id:"thailand", container:"container4", name:"thailand"},
-    {id:"phillippines", container:"container5", name:"phillippines"},
-    {id:"malayasia", container:"container6", name:"malayasia"},
-    {id:"myanmar", container:"container7", name:"myanmar"},
+    {id:"thailand", container:"container4", name:"Thailand"},
+    {id:"phillippines", container:"container5", name:"Phillippines"},
+    {id:"malayasia", container:"container6", name:"Malayasia"},
+    {id:"myanmar", container:"container7", name:"Myanmar"},
 ];
 
 //charts["singapore"] = chart;
@@ -61,7 +61,7 @@ function emitData(){
                     message: JSON.stringify({
                         name: 'regional mock server data',
                         id: source.id,
-                        dataPoint: Math.random(),
+                        dataPoint: Math.round(Math.random() * 100),
                         date: (new Date()).getTime()
                     })
         });
