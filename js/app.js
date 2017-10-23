@@ -5,7 +5,7 @@ var key = 'HqYEYvKSgPXHe-yG3zp-YySG2-n03jHV';
 var charts = {}, chart = {}, chart2 = {};
 
 var dataSources = [
-    {id:"singapore", container:"container", name:"Singapore"},
+    {id:"singapore", container:"container1", name:"Singapore"},
     {id:"vietnam", container:"container2", name:"Vietnam"},
     {id:"indonesia", container:"container3", name:"Indonesia"},
     {id:"thailand", container:"container4", name:"Thailand"},
@@ -14,7 +14,13 @@ var dataSources = [
     {id:"myanmar", container:"container7", name:"Myanmar"},
 ];
 
-//charts["singapore"] = chart;
+
+var cityCharts = new Vue({
+  el: '#charts',
+  data: {
+    items: dataSources
+  }
+})
 
 emitter.on('connect', function(){
     // once we're connected, subscribe to the 'chat' channel
@@ -50,7 +56,7 @@ emitter.on('message', function(chartData){
     
 });
 
-//emit mock data, this would be coming from you server and is for demonstration only
+//emit mock data, this would be coming from your server and is for demonstration only
 function emitData(){
 
     dataSources.forEach(function(source){
@@ -73,4 +79,3 @@ function emitData(){
 (function(){
     setTimeout(emitData, 3000);
 })();
-
